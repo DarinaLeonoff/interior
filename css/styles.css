@@ -246,6 +246,7 @@ body {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+  margin-bottom: 33px;
 }
 
 .portfolio__array {
@@ -266,5 +267,51 @@ body {
   line-height: 120%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.button {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 135px;
+  padding: 33px 70px;
+  border: 2px solid #5d002c;
+  color: #5d002c;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 146.28%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.philosophy {
+  background-image: url(../img/bg-philosophy.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 435px 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.philosophy__text {
+  max-width: 800px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 25px;
 }
 /*# sourceMappingURL=styles.css.map */

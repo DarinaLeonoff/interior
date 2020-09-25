@@ -204,6 +204,7 @@ body {
     }
     &__img {
         flex-grow: 2;
+        margin-bottom: 33px;
     }
     &__array {
         padding: 30px 25px;
@@ -219,4 +220,38 @@ body {
     line-height: 120%;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+.button {
+    display: block;
+    box-sizing: border-box;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 135px;
+    padding: 33px 70px;
+    border: 2px solid $arrow;
+    color: $arrow;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 146.28%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.philosophy {
+    background-image: url(../img/bg-philosophy.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 435px 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__text {
+        max-width: 800px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 25px;
+    }
 }
