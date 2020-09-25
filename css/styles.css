@@ -293,7 +293,7 @@ body {
   background-image: url(../img/bg-philosophy.png);
   background-color: transparent;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   padding: 435px 570px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,5 +313,138 @@ body {
   font-size: 18px;
   line-height: 26px;
   margin-top: 25px;
+}
+
+.services {
+  padding: 128px 0;
+}
+
+.services__title, .services__card-title {
+  color: #564a5e;
+}
+
+.services__head, .services__title {
+  text-align: center;
+}
+
+.services__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services__card {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services__card-title {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 101.66%;
+}
+
+.services__text {
+  color: #9b7f81;
+  font-size: 18px;
+}
+
+.services__number {
+  color: #e5d4be;
+  font-family: Playfair Display;
+  font-size: 100px;
+  line-height: 101.66%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: relative;
+}
+
+.services__number::before {
+  content: "";
+  display: block;
+  z-index: -1;
+  width: 78px;
+  height: 85px;
+  background-color: #564a5e;
+  position: absolute;
+  top: -1px;
+  left: 25px;
+}
+
+.instagram {
+  padding-bottom: 140px;
+  max-width: 2540px;
+  margin: 0 auto;
+}
+
+.instagram__head, .instagram__title {
+  text-align: center;
+}
+
+.instagram__title {
+  color: #564a5e;
+  margin-bottom: 28px;
+}
+
+.instagram__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sub {
+  display: block;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 146.28%;
+  color: #564a5e;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.footer {
+  padding: 95px 0;
+  background-color: #564a5e;
+}
+
+.footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__link {
+  color: #c8b091;
+}
+
+.footer__icon {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #c8b091;
+  border-radius: 50%;
+}
+
+.footer__icon-vk {
+  margin-right: 38px;
+  padding: 23.5px 20px;
 }
 /*# sourceMappingURL=styles.css.map */

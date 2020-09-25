@@ -242,7 +242,7 @@ body {
     background-image: url(../img/bg-philosophy.png);
     background-color: transparent;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding: 435px 570px;
     display: flex;
     flex-direction: column;
@@ -253,5 +253,108 @@ body {
         font-size: 18px;
         line-height: 26px;
         margin-top: 25px;
+    }
+}
+
+.services {
+    padding: 128px 0;
+    &__title,
+    &__card-title {
+        color: $back;
+    }
+    &__head,
+    &__title {
+        text-align: center;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__card {
+        width: 45%;
+        display: flex;
+    }
+    &__card-title {
+        font-family: Playfair Display;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 101.66%;
+    }
+    &__text {
+        color: $text;
+        font-size: 18px;
+    }
+    &__number {
+        color: $numb;
+        font-family: Playfair Display;
+        font-size: 100px;
+        line-height: 101.66%;
+        transform: rotate(-90deg);
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            z-index: -1;
+            width: 78px;
+            height: 85px;
+            background-color: $back;
+            position: absolute;
+            top: -1px;
+            left: 25px;
+        }
+    }
+}
+
+.instagram {
+    padding-bottom: 140px;
+    max-width: 2540px;
+    margin: 0 auto;
+    &__head,
+    &__title {
+        text-align: center;
+    }
+    &__title {
+        color: $back;
+        margin-bottom: 28px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.sub {
+    display: block;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 146.28%;
+    color: $back;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.footer {
+    padding: 95px 0;
+    background-color: $back;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        color: $copy;
+    }
+    &__icon {
+        box-sizing: border-box;
+        padding: 20px;
+        border: 1px solid $copy;
+        border-radius: 50%;
+    }
+    &__icon-vk {
+        margin-right: 38px;
+        padding: 23.5px 20px;
     }
 }
