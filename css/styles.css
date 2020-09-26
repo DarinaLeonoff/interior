@@ -290,11 +290,13 @@ body {
 }
 
 .philosophy {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-image: url(../img/bg-philosophy.png);
   background-color: transparent;
   background-repeat: no-repeat;
-  background-size: contain;
-  padding: 435px 570px;
+  background-size: 100%;
+  padding: 220px 570px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,7 +310,7 @@ body {
 }
 
 .philosophy__text {
-  max-width: 800px;
+  width: 800px;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
@@ -398,9 +400,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.instagram__img {
+  margin-bottom: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .sub {
@@ -429,6 +440,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__link {
@@ -436,15 +450,11 @@ body {
 }
 
 .footer__icon {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 20px;
-  border: 1px solid #c8b091;
+  text-decoration: none;
+  color: #c8b091;
+  border: 1px solid;
   border-radius: 50%;
-}
-
-.footer__icon-vk {
-  margin-right: 38px;
-  padding: 23.5px 20px;
+  padding: 20px;
+  margin-left: 38px;
 }
 /*# sourceMappingURL=styles.css.map */

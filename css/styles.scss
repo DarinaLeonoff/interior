@@ -239,16 +239,17 @@ body {
 }
 
 .philosophy {
+    box-sizing: border-box;
     background-image: url(../img/bg-philosophy.png);
     background-color: transparent;
     background-repeat: no-repeat;
-    background-size: contain;
-    padding: 435px 570px;
+    background-size: 100%;
+    padding: 220px 570px;
     display: flex;
     flex-direction: column;
     align-items: center;
     &__text {
-        max-width: 800px;
+        width: 800px;
         text-align: center;
         font-size: 18px;
         line-height: 26px;
@@ -320,7 +321,12 @@ body {
     }
     &__box {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+    }
+    &__img {
+        margin-bottom: 20px;
+        align-self: center;
     }
 }
 .sub {
@@ -343,18 +349,17 @@ body {
     &__box {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     &__link {
         color: $copy;
     }
     &__icon {
-        box-sizing: border-box;
-        padding: 20px;
-        border: 1px solid $copy;
+        text-decoration: none;
+        color: $copy;
+        border: 1px solid;
         border-radius: 50%;
-    }
-    &__icon-vk {
-        margin-right: 38px;
-        padding: 23.5px 20px;
+        padding: 20px;
+        margin-left: 38px;
     }
 }
