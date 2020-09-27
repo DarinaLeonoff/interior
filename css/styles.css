@@ -40,6 +40,7 @@ body {
   font-size: 16px;
   line-height: 23px;
   color: #fff;
+  overflow-x: hidden;
 }
 
 .head,
@@ -56,6 +57,7 @@ body {
   font-size: 20px;
   line-height: 214.8%;
   letter-spacing: 0.1em;
+  text-decoration: none;
 }
 
 .title {
@@ -141,6 +143,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  text-decoration: none;
   color: #fff5e9;
 }
 
@@ -191,7 +194,7 @@ body {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 230px 520px 225px 872px;
       grid-template-rows: 230px 520px 225px 872px;
-  grid-gap: 85px 99px;
+  grid-gap: 85px 80px;
 }
 
 .portfolio__card {
@@ -292,11 +295,12 @@ body {
 .philosophy {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url(../img/bg-philosophy.png);
+  background-image: url(../img/back.jpg);
   background-color: transparent;
   background-repeat: no-repeat;
-  background-size: 100%;
-  padding: 220px 570px;
+  width: 100%;
+  background-size: cover;
+  padding: 20% 570px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,7 +322,7 @@ body {
 }
 
 .services {
-  padding: 128px 0;
+  padding: 128px 0 90px 0;
 }
 
 .services__title, .services__card-title {
@@ -329,29 +333,41 @@ body {
   text-align: center;
 }
 
+.services__title {
+  margin-bottom: 34px;
+}
+
 .services__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .services__card {
-  width: 45%;
+  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .services__card-title {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 32px;
+  margin: 0;
   line-height: 101.66%;
+}
+
+.services__info {
+  width: 400px;
+  padding: 20px 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .services__text {
@@ -360,6 +376,8 @@ body {
 }
 
 .services__number {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   color: #e5d4be;
   font-family: Playfair Display;
   font-size: 100px;
@@ -383,7 +401,7 @@ body {
 
 .instagram {
   padding-bottom: 140px;
-  max-width: 2540px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -400,18 +418,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .instagram__img {
-  margin-bottom: 20px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  max-width: 370px;
+  height: auto;
 }
 
 .sub {
