@@ -1,0 +1,420 @@
+@import "vars";
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-Regular.woff2) format("woff2"),
+        url(../fonts/Montserrat/Montserrat-Regular.woff) format("woff"),
+        url(../fonts/Montserrat/Montserrat-Regular.ttf) format("ttf");
+
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-Bold.woff2) format("woff2"),
+        url(../fonts/Montserrat/Montserrat-Bold.woff) format("woff"),
+        url(../fonts/Montserrat/Montserrat-Bold.ttf) format("ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-SemiBold.woff2) format("woff2"),
+        url(../fonts/Montserrat/Montserrat-SemiBold.woff) format("woff"),
+        url(../fonts/Montserrat/Montserrat-SemiBold.ttf) format("ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-ExtraBold.woff2) format("woff2"),
+        url(../fonts/Montserrat/Montserrat-ExtraBold.woff) format("woff"),
+        url(../fonts/Montserrat/Montserrat-ExtraBold.ttf) format("ttf");
+    font-weight: 800;
+}
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Bold.woff2) format("woff2"),
+        url(../fonts/Playfair_Display/PlayfairDisplay-Bold.woff) format("wof"),
+        url(../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf) format("ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Meddon";
+    src: url(../fonts/Meddon/Meddon.woff2) format("woff2"), url(../fonts/Meddon/Meddon.woff) format("woff"),
+        url(../fonts/Meddon/Meddon.ttf) format("ttf");
+    font-weight: 400;
+}
+
+body {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.head,
+.logo {
+    font-family: "Meddon";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 63px;
+    color: #dcc4a6;
+    margin: 0;
+}
+
+.logo {
+    font-size: 20px;
+    line-height: 214.8%;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+.title {
+    font-family: "PlayfairDisplay";
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 120%;
+    margin: 0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 865px;
+    background-image: url(../img/pattern600X600.png);
+    background-color: $back;
+    padding-top: 45px;
+    &__container {
+        position: relative;
+        height: 865px;
+    }
+    &__title {
+        font-size: 60px;
+        line-height: 80px;
+        text-align: center;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: 115px;
+        color: $white;
+    }
+    &__head {
+        font-size: 50px;
+        line-height: 214.8%;
+        text-align: center;
+        letter-spacing: 0.2em;
+        color: $promoHead;
+        margin: 0;
+    }
+    &__img {
+        position: absolute;
+        left: 0;
+        bottom: -auto;
+    }
+    &__line1 {
+        position: absolute;
+        top: -50px;
+        left: -270px;
+    }
+    &__line2 {
+        position: absolute;
+        top: 209px;
+        right: -245px;
+    }
+}
+
+.menu-list {
+    list-style: none;
+    color: $white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-item {
+    align-self: center;
+    text-decoration: none;
+    color: $white;
+    &:hover {
+        color: $copy;
+        text-decoration: underline;
+    }
+}
+
+.about {
+    padding-top: 430px;
+
+    &__info {
+        background-color: $back;
+        max-width: 775px;
+        padding: 75px 168px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    &__text-top {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 180%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-top: 70px;
+    }
+    &__text {
+        margin-top: 33px;
+    }
+    &__img {
+        position: absolute;
+        top: -98px;
+        right: -633px;
+    }
+}
+
+.portfolio {
+    padding: 140px 0;
+    &__title {
+        color: $back;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 230px 520px 225px 872px;
+        grid-gap: 85px 80px;
+    }
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-first {
+            grid-row: 1/3;
+        }
+        &-third {
+            grid-row: 2/4;
+        }
+        &-fourth {
+            grid-row: 3/5;
+        }
+        &-fifth {
+            grid-row: 4/5;
+        }
+    }
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__img {
+        flex-grow: 2;
+        margin-bottom: 33px;
+    }
+    &__array {
+        padding: 30px 25px;
+        border: 3px solid $arrow;
+        border-radius: 50%;
+        height: max-content;
+        align-self: center;
+    }
+}
+.card-title {
+    color: $back;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.button {
+    display: block;
+    box-sizing: border-box;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 135px;
+    padding: 33px 70px;
+    border: 2px solid $arrow;
+    color: $arrow;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 146.28%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.philosophy {
+    box-sizing: border-box;
+    background-image: url(../img/back.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: cover;
+    padding: 20% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__text {
+        max-width: 800px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 25px;
+    }
+}
+
+.services {
+    padding: 128px 0 90px 0;
+    &__title,
+    &__card-title {
+        color: $back;
+    }
+    &__head,
+    &__title {
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 34px;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__card {
+        width: 35%;
+        display: flex;
+        margin-bottom: 50px;
+    }
+    &__card-title {
+        font-family: Playfair Display;
+        font-weight: bold;
+        font-size: 32px;
+        margin: 0;
+        line-height: 101.66%;
+    }
+    &__info {
+        width: 400px;
+        padding: 20px 0;
+        align-self: flex-start;
+    }
+    &__text {
+        color: $text;
+        font-size: 18px;
+    }
+    &__number {
+        align-self: flex-start;
+        color: $numb;
+        font-family: Playfair Display;
+        font-size: 100px;
+        line-height: 101.66%;
+        transform: rotate(-90deg);
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            z-index: -1;
+            width: 78px;
+            height: 85px;
+            background-color: $back;
+            position: absolute;
+            top: -1px;
+            left: 25px;
+        }
+    }
+}
+
+.instagram {
+    padding-bottom: 140px;
+    max-width: 1920px;
+    margin: 0 auto;
+    &__head,
+    &__title {
+        text-align: center;
+    }
+    &__title {
+        color: $back;
+        margin-bottom: 28px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__img {
+        max-width: 370px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+.sub {
+    display: block;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 146.28%;
+    color: $back;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.footer {
+    padding: 95px 0;
+    background-color: $back;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        color: $copy;
+    }
+    &__icon {
+        text-decoration: none;
+        color: $copy;
+        border: 1px solid;
+        border-radius: 50%;
+        padding: 20px;
+        margin-left: 38px;
+    }
+}
+
+@media (max-width: 800px) {
+    .list-li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .about__img {
+        display: none;
+    }
+    .portfolio__cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio__card {
+    }
+    .portfolio__heading {
+        text-align: center;
+    }
+    .services__card {
+        width: 60%;
+    }
+    .instagram__box {
+        width: 100%;
+        justify-content: center;
+    }
+    .footer__box {
+        flex-direction: column;
+    }
+    .footer__link {
+        margin: 20px 0px;
+    }
+}
