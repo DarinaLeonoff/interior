@@ -76,7 +76,7 @@ body {
 }
 
 .header {
-  height: 865px;
+  min-height: 865px;
   background-image: url(../img/pattern600X600.png);
   background-color: #564a5e;
   padding-top: 45px;
@@ -110,8 +110,7 @@ body {
 .header__img {
   position: absolute;
   left: 0;
-  bottom: -250px;
-  width: 1400px;
+  bottom: -auto;
 }
 
 .header__line1 {
@@ -134,9 +133,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .menu-item {
@@ -145,6 +148,11 @@ body {
       align-self: center;
   text-decoration: none;
   color: #fff5e9;
+}
+
+.menu-item:hover {
+  color: #c8b091;
+  text-decoration: underline;
 }
 
 .about {
@@ -298,9 +306,9 @@ body {
   background-image: url(../img/back.jpg);
   background-color: transparent;
   background-repeat: no-repeat;
-  width: 100%;
+  max-width: 100%;
   background-size: cover;
-  padding: 20% 570px;
+  padding: 20% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,7 +322,7 @@ body {
 }
 
 .philosophy__text {
-  width: 800px;
+  max-width: 800px;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
@@ -421,11 +429,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .instagram__img {
   max-width: 370px;
   height: auto;
+  margin-bottom: 10px;
 }
 
 .sub {
@@ -470,5 +481,46 @@ body {
   border-radius: 50%;
   padding: 20px;
   margin-left: 38px;
+}
+
+@media (max-width: 800px) {
+  .list-li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .about__img {
+    display: none;
+  }
+  .portfolio__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio__heading {
+    text-align: center;
+  }
+  .services__card {
+    width: 60%;
+  }
+  .instagram__box {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__link {
+    margin: 20px 0px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
