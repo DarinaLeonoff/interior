@@ -85,10 +85,11 @@ body {
 }
 
 .header {
-    min-height: 865px;
+    min-height: 800px;
     background-image: url(../img/pattern600X600.png);
     background-color: $back;
     padding-top: 45px;
+    padding-bottom: 1vw * 0.05;
     &__container {
         position: relative;
         height: 865px;
@@ -114,7 +115,8 @@ body {
     &__img {
         position: absolute;
         left: 0;
-        bottom: -auto;
+        bottom: -12%;
+        width: 100%;
     }
     &__line1 {
         position: absolute;
@@ -151,7 +153,7 @@ body {
 }
 
 .about {
-    padding-top: 430px;
+    padding-top: 25%;
 
     &__info {
         background-color: $back;
@@ -179,7 +181,7 @@ body {
 }
 
 .portfolio {
-    padding: 140px 0;
+    padding: 14% 0;
     &__title {
         color: $back;
     }
@@ -239,7 +241,7 @@ body {
     box-sizing: border-box;
     width: max-content;
     margin: 0 auto;
-    margin-top: 135px;
+    margin-top: 30%;
     padding: 33px 70px;
     border: 2px solid $arrow;
     color: $arrow;
@@ -434,6 +436,7 @@ body {
     }
     .services__cards {
         justify-content: normal;
+        padding: 0 20px;
     }
     .services__card {
         width: 60%;
@@ -454,8 +457,7 @@ body {
     .about__info,
     .card-title {
         text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 10% 20px;
     }
     .portfolio__card {
         justify-content: center;
