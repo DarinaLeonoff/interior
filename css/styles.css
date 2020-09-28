@@ -162,7 +162,7 @@ body {
 .about__info {
   background-color: #564a5e;
   max-width: 775px;
-  padding: 75px 168px;
+  padding: 75px 12%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -262,14 +262,17 @@ body {
 
 .portfolio__array {
   padding: 30px 25px;
-  border: 3px solid #5d002c;
+  border: 2px solid #5d002c;
   border-radius: 50%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  fill: #5d002c;
+}
+
+.portfolio__array:hover {
+  fill: #fff;
+  background-color: #5d002c;
 }
 
 .card-title {
@@ -298,6 +301,11 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.button:hover {
+  background-color: #5d002c;
+  color: white;
 }
 
 .philosophy {
@@ -409,7 +417,7 @@ body {
 
 .instagram {
   padding-bottom: 140px;
-  max-width: 1920px;
+  max-width: 1900px;
   margin: 0 auto;
 }
 
@@ -477,17 +485,31 @@ body {
 .footer__icon {
   text-decoration: none;
   color: #c8b091;
-  border: 1px solid;
+  border: 1px solid #c8b091;
   border-radius: 50%;
   padding: 20px;
   margin-left: 38px;
 }
 
+.footer__icon:hover {
+  color: #fff5e9;
+  background-color: #c8b091;
+}
+
 @media (max-width: 800px) {
+  .title {
+    font-size: 40px;
+  }
   .list-li {
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+  }
+  .header__line {
+    display: none;
+  }
+  .about__info {
+    padding: 0;
   }
   .about__img {
     display: none;
@@ -501,11 +523,25 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .portfolio__img {
+    width: 100%;
+  }
   .portfolio__heading {
     text-align: center;
   }
+  .services {
+    padding: 0;
+  }
+  .services__cards {
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
   .services__card {
     width: 60%;
+  }
+  .instagram {
+    padding-bottom: 0;
   }
   .instagram__box {
     width: 100%;
@@ -521,6 +557,20 @@ body {
   }
   .footer__link {
     margin: 20px 0px;
+  }
+  .about__info,
+  .card-title {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .portfolio__card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .philosophy {
+    padding: 20% 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
